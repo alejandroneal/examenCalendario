@@ -27,7 +27,7 @@ public class Programa {
         System.out.println("-----------------------------------------------------------------------");
         
         System.out.println("Generar un calendario con todos los meses del año");
-        Calendario[] calendarioAnual = fecha.calendarioAnual(2020);
+        Calendario[] calendarioAnual = fecha.calendarioAnual(2023);
         for (int i = 0; i < calendarioAnual.length; i++) {
             System.out.println("Mes " + (i + 1));
             calendarioAnual[i].mostrarCalendario();

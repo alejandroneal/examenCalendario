@@ -36,7 +36,7 @@ public class Calendario {
 
         for (int i = 0; i < this.calendario.length; i++) {
             for (int j = 0; j < this.calendario[i].length; j++) {
-                if (contador < tamanioMes()) { //  filtro para evitar que se añadan días que no están en el mes
+                if (contador <= tamanioMes()) { //  filtro para evitar que se añadan días que no están en el mes
                     if (contador == 1) {
                         j = diaEmpiezaMes();
                     }
