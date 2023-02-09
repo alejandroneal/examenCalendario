@@ -30,7 +30,7 @@ public class Calendario {
     }
 
     //MÉTODO PARA RELLENAR LA MATRIZ CALENDARIO CON LOS DÍAS DEL MES QUE SE INDÍCA
-    public void generarCalendario() {
+    private void generarCalendario() {
 
         int contador = 1;
 
@@ -67,6 +67,19 @@ public class Calendario {
         return posicion;
     }
 
+    //TENGO QUE SOBRESCRIBIR EL TOSTRING
+//    @Override    
+//    public String toString() {
+//        StringBuilder sb = new StringBuilder();
+//        sb.append("Calendario{");
+//        sb.append("calendario=").append(calendario);
+//        sb.append(", mes=").append(mes);
+//        sb.append(", anio=").append(anio);
+//        sb.append('}');
+//        return sb.toString();
+//
+//    }
+
     //MÉTODO PARA MOSTRAR POR PANTALLA EL CALENDARIO ORDENADO POR LOS DÍAS DE LA SEMANA
     public void mostrarCalendario() {
         System.out.println("L       M       X       J       V       S       D");
@@ -80,7 +93,6 @@ public class Calendario {
             }
             System.out.println("");
         }
-
     }
 
     //MÉTODO PARA AVERIGUAR EN QUE DÍA DE LA SEMANA CAE UN DÍA DEL MES
